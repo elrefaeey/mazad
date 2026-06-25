@@ -17,9 +17,7 @@ function UnitCard({ unit, isExpired, auction }: UnitCardProps) {
   const totalPrice = unit.starting_price_per_meter * areaNum;
 
   const receiveLabel =
-    unit.recieve_duration == 0 ||
-    unit.recieve_duration === "0" ||
-    unit.recieve_duration === 0
+    unit.recieve_duration === 0 || String(unit.recieve_duration) === "0"
       ? "استلام فوري"
       : String(unit.recieve_duration);
 
