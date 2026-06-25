@@ -1,0 +1,73 @@
+.auction-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #eee;
+  background-color: #f9f9f9;
+  margin-top: auto;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-details {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-details:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.btn-edit {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #059669;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .auction-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .action-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}

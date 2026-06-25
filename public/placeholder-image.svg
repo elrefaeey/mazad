@@ -1,0 +1,7 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="300" fill="#F3F4F6"/>
+<path d="M100 120L120 100L180 160L220 120L300 200V220H100V120Z" fill="#D1D5DB"/>
+<circle cx="140" cy="130" r="20" fill="#D1D5DB"/>
+<rect x="160" y="260" width="80" height="20" rx="4" fill="#9CA3AF"/>
+<text x="200" y="275" text-anchor="middle" fill="#6B7280" font-family="Arial" font-size="12">صورة الوحدة</text>
+</svg>
