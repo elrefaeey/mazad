@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import io from "socket.io-client";
+import { VITE_SOCKET_URL } from "../../config/api";
 import UpdateSound from "../../assets/mixkit-magic-marimba-2820.wav";
 import { useBidderAuth } from "../../contexts/bidderAuth";
 import { LiveBidder } from "../../types/bidders";
@@ -46,7 +47,7 @@ function useUnitSocket({ unitId }) {
       return;
     }
 
-    const socketConnection = io("https://dev.enterprise-egy.com", {
+    const socketConnection = io(VITE_SOCKET_URL, {
       transports: ["websocket"],
       timeout: 20000,
       reconnection: true,

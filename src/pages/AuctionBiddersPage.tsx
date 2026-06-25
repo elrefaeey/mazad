@@ -7,6 +7,7 @@ import PageSpinner from "../components/ui/PageSpinner";
 import { HiUsers } from "react-icons/hi";
 import { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
+import { VITE_SOCKET_URL } from "../config/api";
 import { toast } from "react-hot-toast";
 import AddBidderToUnit from "../components/units/AddBidderToUnit";
 
@@ -49,7 +50,7 @@ export default function AuctionBiddersPage() {
         console.log("🔌 Initializing Socket connection...");
 
         // Create socket connection
-        socketRef.current = io("https://dev.enterprise-egy.com", {
+        socketRef.current = io(VITE_SOCKET_URL, {
           transports: ["websocket"],
           timeout: 20000,
           reconnection: true,

@@ -7,10 +7,17 @@ export default defineConfig({
     host: true,
     port: 5173,
     allowedHosts: [
-      "all", // يسمح لكل hosts
+      "all",
       "localhost",
       "127.0.0.1",
-      "donte-tromometrical-gratefully.ngrok-free.dev", // دومين ngrok الحالي
+      "donte-tromometrical-gratefully.ngrok-free.dev",
     ],
+    proxy: {
+      "/api/v1": {
+        target: "https://dev.enterprise-egy.com",
+        changeOrigin: true,
+        secure: true,
+      },
+    },
   },
 });
